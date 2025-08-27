@@ -1,56 +1,97 @@
 <!DOCTYPE html>
+<!-- Estrutura inicial do documento HTML5 -->
+
 <html lang="pt-BR">
-    <head>
-        <meta charset="utf-8">
-        <title>Aula 03 - Web Design</title>
-        <style>
-            .sublinhado {
-                text-decoration: underline;
-            }
-            .riscado {
-                text-decoration: line-through;
-            }
-            .center {
-                text-align: center;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1 align="center">Título principal (H1) - centralizado</h1>
-            <h2 align="left"></h2>Subtítulo (H2) - alinhado à esquerda</h2>
-            <h3 align="right">Seção (H3) - alinhado à direita</h3>
-            <h4>Subseção (H4)</h4>
-            <h5>Detalhe (H5)</h5>
-            <h6>Nota (H6)</h6>
+<!-- Documento em português -->
+<head>
+    <meta charset="utf-8">
+    <!-- Define para aceitar acentos -->
+    
+    <title>Aula 03 - Web Design</title>
+    <!-- Título da aba do navegador -->
 
-            <nav>
-                <p><a href="#posts">Posts</a> |
-                <a href="#lateral"> Leteral</a> |
-                <a href="#rodape"> Rodapé</a></p>
-            </nav>
+    <style>
+        /* CSS interno usado para formatar textos */
+        .sublinhado { 
+            text-decoration: underline; 
+        } /* Sublinha o texto */
+        .riscado { 
+            text-decoration: line-through; 
+        } /* Risca o texto */
+        .center { 
+            text-align: center; 
+        } /* Centraliza o texto */
+    </style>
+</head>
 
-        </header>
+<body>
+    <!-- Todo conteúdo visível da página -->
 
-            <section id="posts">
-                <article class="post">
-                    <header>
-                        <h2>Meu Blog - Primeiro Post</h2>
-                    </header>
-                    <p>Este é um parágrafo com <strong>negrito</strong>, <em>itálico</em>, <span class="sublinhado">sublinhado</span>, <span class="riscado">riscado</span>, além de exemplos de <sub>subscrito</sub> e <sup>sobrescrito</sup>.</p>
-                    <p>Exemplo de <span style="color:blue; font-size:20px;">texto estilizado</span> (substituindo a tag font obsoleta).</font></p>
-                    <div class="center">Este texto está centralizado (substituindo center).</div>
-                    <p style="text-align: justify;">Parágrafo justificado para demonstrar alinhamento.<br>
-                    Esta é a linha seguinte após o br/.</p>
-                </article>
-            </section>
+    <header>
+        <!-- Cabeçalho com títulos principais -->
+        <h1 align="center">Título principal (H1) - centralizado</h1>
+        <h2 align="left">Subtítulo (H2) - alinhado à esquerda</h2>
+        <h3 align="right">Seção (H3) - alinhado à direita</h3>
+        <h4>Subseção (H4)</h4>
+        <h5>Detalhe (H5)</h5>
+        <h6>Nota (H6)</h6>
 
-            <aside id="lateral">
-                <h3>Conteúdo Relacionado</h3>
-                <p>Links, anúncios, ou notas que não fazem parte do fluxo principal do artigo.</p>
-            </aside>
+        <!-- Menu de navegação com links -->
+        <nav>
+            <p>
+                <a href="#posts">Posts</a> |
+                <a href="#lateral">Lateral</a> |
+                <a href="#rodape">Rodapé</a>
+            </p>
+        </nav>
+    </header>
 
-            <footer id="rodape" style="text-align: center;">© 2025 – Exemplo didático de HTML da Aula</footer>
-        
-    </body>
+    <section id="posts">
+        <!-- Seção de posts -->
+        <article class="post">
+            <!-- Primeiro artigo -->
+            <header>
+                <h2>Meu Blog - Primeiro Post</h2>
+            </header>
+
+            <!-- Parágrafo com diferentes formatações -->
+            <p>
+                Texto com <strong>negrito</strong>, 
+                <em>itálico</em>, 
+                <span class="sublinhado">sublinhado</span>, 
+                <span class="riscado">riscado</span>, 
+                além de <sub>subscrito</sub> e <sup>sobrescrito</sup>.
+            </p>
+
+            <!-- Texto estilizado com CSS inline -->
+            <p>
+                Exemplo de 
+                <span style="color:blue; font-size:20px;">texto estilizado</span> 
+                (cor azul e fonte maior).
+            </p>
+
+            <!-- Texto centralizado usando classe -->
+            <div class="center">
+                Este texto está centralizado.
+            </div>
+
+            <!-- Parágrafo justificado com quebra de linha -->
+            <p style="text-align: justify;">
+                Parágrafo justificado para demonstrar alinhamento.<br>
+                Esta é a linha seguinte após a quebra.
+            </p>
+        </article>
+    </section>
+
+    <aside id="lateral">
+        <!-- Conteúdo lateral (informações extras) -->
+        <h3>Conteúdo Relacionado</h3>
+        <p>Links ou notas que não fazem parte do artigo principal.</p>
+    </aside>
+
+    <footer id="rodape" style="text-align: center;">
+        <!-- Rodapé da página -->
+        © 2025 – Exemplo didático de HTML da Aula
+    </footer>
+</body>
 </html>
